@@ -21,18 +21,91 @@ body {
   list-style-type: none;
 }
 
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   display: grid;
   grid-template-rows: 8vh 87vh 5vh;
-  grid-template-columns: [full-start] 20vw [center-start] 1fr [center-end] 20vw [full-end];
+  grid-template-columns: [full-start] 18vw [center-start] 1fr [center-end] 20vw [full-end];
 }
 
 .left_sidebar {
-  background-color: aquamarine;
+  background-color: rgb(215, 243, 252);
   grid-column: full-start / center-start;
   grid-row: 1 / -1;
+
+  padding: 1.2rem 4.8rem;
+
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: 3rem 1fr 10rem;
 }
 
+.header__logo {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.header__text {
+  font-size: 2.4rem;
+  margin-left: 1rem;
+}
+
+.header__text span {
+  color: palevioletred;
+  font-weight: 400;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  grid-row: 1 / 2;
+}
+
+.sidebar__nav {
+  margin-top: 2.4rem;
+  grid-row: 2 / 3;
+}
+
+.sidebar__nav li {
+  margin: 3.2rem auto;
+}
+
+.sidebar__nav li a {
+  color: var(--color-primary-dark);
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 1.2rem 2.4rem;
+}
+
+.sidebar__nav li a:hover {
+  background-color: var(--color-primary-grey);
+  border: none;
+  border-left: 0.6rem solid palevioletred;
+}
+
+.sidebar__nav .count {
+  background-color: palevioletred;
+  padding: 0.6rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.logout {
+  grid-row: 3 / 4;
+  font-size: 2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/* Header section */
 .header {
   background-color: cadetblue;
   grid-column: center-start / full-end;
