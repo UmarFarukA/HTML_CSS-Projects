@@ -1,6 +1,7 @@
 :root {
   --color-primary-dark: #151516;
   --color-primary-grey: #7f8185;
+  --color-white: #fff;
 }
 
 *,
@@ -29,14 +30,24 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
 .container {
   display: grid;
   grid-template-rows: 8vh 87vh 5vh;
   grid-template-columns: [full-start] 18vw [center-start] 1fr [center-end] 20vw [full-end];
 }
 
+/* Left sidebar start */
+
 .left_sidebar {
-  background-color: rgb(215, 243, 252);
+  background-color: rgb(221, 235, 240);
   grid-column: full-start / center-start;
   grid-row: 1 / -1;
 
@@ -74,20 +85,39 @@ a {
 }
 
 .sidebar__nav li {
-  margin: 3.2rem auto;
+  margin: 2rem auto;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  align-items: center;
 }
 
+.sidebar__nav li img,
+.logout img,
+.header__right p img {
+  fill: var(--color-primary-dark);
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.9rem;
+}
+.sidebar__nav li img:hover {
+  fill: var(--color-white);
+}
+
+.sidebar__nav li:hover {
+  background-color: rgb(206, 210, 212);
+  border-left: 0.6rem solid palevioletred;
+  transition: all 0.3s ease;
+  transform: translateX(1.4rem);
+}
 .sidebar__nav li a {
   color: var(--color-primary-dark);
   font-size: 2rem;
   text-transform: capitalize;
-  padding: 1.2rem 2.4rem;
 }
 
 .sidebar__nav li a:hover {
-  background-color: var(--color-primary-grey);
+  color: #fff;
   border: none;
-  border-left: 0.6rem solid palevioletred;
 }
 
 .sidebar__nav .count {
@@ -103,26 +133,186 @@ a {
   font-size: 2rem;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
 }
 
 /* Header section */
 .header {
-  background-color: cadetblue;
+  background-color: rgb(242, 250, 250);
   grid-column: center-start / full-end;
   grid-row: 1 / 2;
+
+  padding: 0.4rem 0.8rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
+.header__left {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: 1.2rem;
+}
+
+.header__right {
+  justify-self: end;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  gap: 1rem;
+}
+
+.header_right-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.header_right-text span {
+  font-size: 1.2rem;
+}
+
+.modes,
+.admin-img {
+  justify-self: center;
+}
+
+.modes img {
+  cursor: pointer;
+}
+
+.header__right .admin-img {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+  border-radius: 50%;
+  border: none;
+}
+
+.header_date {
+  background-color: rgb(221, 235, 240);
+  width: 100%;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.header_date:focus {
+  outline: none;
+}
+
+.heading-3 {
+  font-weight: 500;
+}
+
+/* Main Section Starts */
+
 .main {
-  background-color: brown;
+  background-color: rgb(242, 250, 250);
   grid-column: center-start / center-end;
   grid-row: 2 / 3;
+
+  padding: 1.6rem 2rem;
 }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+
+.feature {
+  background-color: var(--color-white);
+  padding: 1.6rem 2rem;
+  border-radius: 1.4rem;
+  box-shadow: 1px 0px 5px 0px;
+  transition: all 0.4s ease;
+  border: none;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.feature:hover {
+  transform: translateY(-1.2rem) scale(1.02);
+}
+
+.feature__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature__caption {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.feature__amount {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.2rem;
+}
+
+.period {
+  color: var(--color-primary-grey);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.feature__detail img {
+  width: 60%;
+  /* height: 100%; */
+  border-radius: 50%;
+  /* background-color: palevioletred; */
+  padding: 1.8rem;
+  fill: #fff;
+}
+
+.progress-bar {
+  justify-self: center;
+  align-self: center;
+  width: 10rem;
+  height: 10rem;
+  background-color: plum;
+  border-radius: 50%;
+}
+
+.progress-bar::before {
+  /* content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  border-radius: 50%; */
+}
+
+/* Main Section starts */
+
+.main__content {
+  margin-top: 3.2rem;
+}
+
+/* Rightbar Section starts */
 
 .right_sidebar {
   background-color: yellowgreen;
   grid-column: center-end / full-end;
   grid-row: 2 / 3;
 }
+
+/* Footer section starts */
 
 .footer {
   background-color: var(--color-primary-dark);

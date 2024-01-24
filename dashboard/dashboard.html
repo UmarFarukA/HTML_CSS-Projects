@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>dashboard</title>
   </head>
@@ -19,42 +16,105 @@
 
       <ul class="sidebar__nav">
         <li>
+          <img src="./img/dashboard.svg" alt="customers" />
           <a href="#"> dashboard </a>
         </li>
         <li>
+          <img src="./img/customers.svg" alt="customers" />
           <a href="#"> Custumers </a>
         </li>
         <li>
+          <img src="./img/order.svg" alt="Order" />
           <a href="#"> Orders </a>
         </li>
         <li>
+          <img src="./img/analytics.svg" alt="Analytics" />
           <a href="#"> Analytics </a>
         </li>
         <li>
+          <img src="./img/message.svg" alt="Messages" />
           <a href="#"> Messages <span class="count">26</span></a>
         </li>
         <li>
+          <img src="./img/product.svg" alt="Product" />
           <a href="#"> Products </a>
         </li>
         <li>
+          <img src="./img/reports.svg" alt="Reports" />
           <a href="#"> Reports </a>
         </li>
         <li>
+          <img src="./img/settings.svg" alt="Settings" />
           <a href="#"> Settings </a>
         </li>
         <li>
+          <img src="./img/plus.svg" alt="Add" />
           <a href="#"> Add Product </a>
         </li>
       </ul>
 
       <div class="logout">
+        <img src="./img/logout.svg" alt="Logout" />
         <p>Logout</p>
       </div>
     </aside>
 
-    <header class="header">Top Header</header>
+    <header class="header">
+      <div class="header__left">
+        <h3 class="heading-3">Dashboard</h3>
+        <input type="date" class="header_date" />
+      </div>
+      <div class="header__right">
+        <p class="modes">
+          <img src="./img/dark.svg" alt="Dark mode" />
+          <img src="./img/light.svg" alt="Light mode" />
+        </p>
+        <div class="header_right-text">
+          <h6>Hey, UFAZ</h6>
+          <span>Admin</span>
+        </div>
+        <img src="./img/user.svg" alt="Admin" class="admin-img" />
+      </div>
+    </header>
 
-    <main class="main">Main</main>
+    <main class="main">
+      <div class="features">
+        <div class="feature">
+          <div class="feature__detail">
+            <img src="./img/pie-cart.png" alt="Expense" />
+            <p class="feature__caption">Total Expense</p>
+            <span class="feature__amount">$14,160</span>
+            <p class="period">Last 24 Hours</p>
+          </div>
+
+          <div class="progress-bar">62%</div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__detail">
+            <!-- <span class="feature__img"> </span> -->
+            <img src="./img/business-report.png" alt="Expense" />
+            <p class="feature__caption">Total Expense</p>
+            <span class="feature__amount">$14,160</span>
+            <p class="period">Last 24 Hours</p>
+          </div>
+
+          <div class="feature__percentage">62%</div>
+        </div>
+        <div class="feature">
+          <div class="feature__detail">
+            <!-- <span class="feature__img"> </span> -->
+            <img src="./img/trend.png" alt="Expense" />
+            <p class="feature__caption">Total Expense</p>
+            <span class="feature__amount">$14,160</span>
+            <p class="period">Last 24 Hours</p>
+          </div>
+
+          <div class="feature__percentage">62%</div>
+        </div>
+      </div>
+      <div class="main__content">table goes here</div>
+    </main>
 
     <aside class="right_sidebar">Right Sidebar</aside>
 
