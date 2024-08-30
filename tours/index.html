@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UFAZ - Tours</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="text-white">
+      <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container">
+          <a class="navbar-brand text-white fs-1 fw-bolder" href="#"
+            >Ufaz Tours</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 d-flex align-items-center"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#features"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#faqs">Faqs</a>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group">
+                  <button type="button" class="btn bg-white text-success">
+                    Get Stated
+                  </button>
+                  <button
+                    type="button"
+                    class="btn bg-white dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Login</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-img_container">
+            <img
+              src="./images/img_1.jpg"
+              class="d-block w-100 c-img_item"
+              alt="..."
+            />
+            <div class="carousel-caption top-0">
+              <h5 class="fs-2 text-capitalize">
+                Let the journey be your home.
+              </h5>
+              <p class="text-uppercase display-5">
+                Discovering new places, one tour at a time
+              </p>
+              <button class="btn btn-lg btn-success">Explore &rAarr;</button>
+            </div>
+          </div>
+          <div class="carousel-item c-img_container">
+            <img
+              src="./images/img_2.jpg"
+              class="d-block w-100 c-img_item"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item c-img_container">
+            <img
+              src="./images/img_3.jpg"
+              class="d-block w-100 c-img_item"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="features pt-5 pb-5">
+      <div class="container text-center">
+        <h5 class="text-success display-4 fw-bold py-4">Features</h5>
+        <div
+          class="d-flex flex-column align-content-md-start flex-md-row justify-content-around text-capitalize"
+        >
+          <div class="d-flex align-items-center">
+            <i class="bi bi-airplane-fill text-success fs-2 me-3 me-md-3"></i>
+            <span>a comfortable journey fill with passion</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="bi bi-globe text-success fs-2 me-3 me-md-3"></i>
+            <span>explore the world in style and ease</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="bi bi-safe text-success fs-2 me-3 me-md-3"></i>
+            <span>safety of luggages, assured</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages">
+      <div class="container">
+        <h5 class="text-success display-4 text-center fw-bold py-1">
+          Packages
+        </h5>
+        <div class="row container pt-5">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card card_container">
+              <img src="./images/img_4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-md btn-success">Basic</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card card_container">
+              <img src="./images/img_6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-md btn-success">Premium</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card card_container">
+              <img src="./images/img_7.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-md btn-success">Premium +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faqs">
+      <div class="container text-center d-flex align-items-center flex-column">
+        <h5 class="text-success display-4 text-center fw-bold py-3">FAQs</h5>
+        <div class="accordion w-75 mb-5" id="faqaAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button bg-success text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqaAccordion"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-success text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse bg-success text-white"
+              data-bs-parent="#faqaAccordion"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-success text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqaAccordion"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>UFAZ Tours</footer>
+  </body>
+</html>

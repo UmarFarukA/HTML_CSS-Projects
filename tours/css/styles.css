@@ -1,0 +1,31 @@
+/* Hero section styles */
+.c-img_container {
+  height: 40.2rem;
+  object-fit: cover;
+}
+
+.c-img_item {
+  height: 100%;
+}
+
+/* Features section styles */
+.features {
+  background-color: #e8fcf1;
+  height: 20.4rem;
+}
+
+/* Packages section */
+.packages {
+  height: auto;
+  margin-top: 4.2rem;
+  margin-bottom: 3.8rem;
+}
+
+.card_container {
+  width: 100%;
+}
+
+/* FAQs section styles */
+.faqs {
+  background-color: #e8fcf1;
+}
